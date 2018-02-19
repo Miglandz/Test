@@ -10,10 +10,10 @@ SAN charakteryzuje się bardzo długim czasem bezawaryjnej pracy systemu. Na poz
 
 ## Proces projektowania infrastruktury sieci storage area network
 Proces projektowania infrastruktury sieci SAN nie odbiega wiele od procesu projektowania tradycyjnej sieci LAN i złożony jest z następujących etapów:
-* zbieranie danych,
-* analiza danych,
-* wybór architektury,
-* budowa prototypu i testowanie.
+1. zbieranie danych,
+2. analiza danych,
+3. wybór architektury,
+4. budowa prototypu i testowanie.
 
 ### Na etapie zbierania danych projektant powinien:
 * zgromadzić dokładne informacje na temat nodów, które będą włączone 
@@ -50,7 +50,7 @@ Wydaje się być najrozsądniejszym wyborem oferuje najwyższe wskaźniki skalow
 ## Porównanie infrastruktury sieci storage area network z innymi systemami
 Rozwiązanie SAN można stosować w przypadku, gdy chcemy zbudować infrastrukturę, w której krytycznymi parametrami są niezawodność oraz wydajność, bez ograniczeń związanych z liczbą zainstalowanych serwerów oraz pamięci masowych, z możliwością efektywnej rozbudowy.
 
-| parametr | DAS | NAS | FC SAN | IP SAN |
+| Parametr | DAS | NAS | FC SAN | IP SAN |
 | --- | --- | ---| --- | --- | 
 | Koszt dodania nowego serwera | wysoki (zakup dedykowanej pamięci masowej oraz kontrolera | niski (podłączenie serwera do sieci IP) | wysoki (zakup dedykowanej karty HBA) | niski ( podłączenie serwera do sieci IP) |
 | Koszt infrastruktury | brak dedykowanej infrastruktury ( każdy serwer podłączony bezpośrednio do pamięci masowej) | niski (możliwość wykorzystania dostępnej infrastruktury IP) | Wysoki ( budowa niezależnej infrastruktury FC, przełącznik FC, karty HBA) | Niski (możliwość wykorzystania dostępnej infrastruktury IP plus dedykowany przełącznik iSCSI) |
