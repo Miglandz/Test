@@ -1,5 +1,5 @@
 
-#STORAGE AREA NETWORK
+# STORAGE AREA NETWORK
 
 ## Co to jest sieć SAN
 Sieć SAN (storage area network) to system połączeń, który pozwala na wydajne przesyłanie danych pomiędzy serwerami i urządzeniami pamięci masowych. Daje możliwość połączenia i współpracy pomiędzy serwerami, macierzami dyskowymi i bibliotekami taśmowymi różnych producent. Jest to najbardziej zaawansowane rozwiązanie w dziedzinie sieci pamięci masowych. Dzięki swoim zaletom znajduje zastosowanie w największych firmach, a liczba jego użytkowników stale rośnie. Dzięki centralizacji zarządzania pozwala dużym firmom na obniżenie kosztów związanych z zatrudnieniem nowych administratorów przy zwiększaniu pojemności pamięci o kolejne macierzy dyskowe oraz można uniknąć kosztów związanych z wyczerpaniem się liczby portów w macierzy lub koniecznością zakupu nowej, znacznie większej.
@@ -49,51 +49,16 @@ Układ przełączników, z których każdy posiada bezpośrednie połączenie z 
 Wydaje się być najrozsądniejszym wyborem oferuje najwyższe wskaźniki skalowalności, wydajności oraz dostępności a koszt takiego rozwiązania jest umiarkowany i ściśle związany z konieczną ilością portów przełączników brzegowych.
 ## Porównanie infrastruktury sieci storage area network z innymi systemami
 Rozwiązanie SAN można stosować w przypadku, gdy chcemy zbudować infrastrukturę, w której krytycznymi parametrami są niezawodność oraz wydajność, bez ograniczeń związanych z liczbą zainstalowanych serwerów oraz pamięci masowych, z możliwością efektywnej rozbudowy.
-parametr
-DAS
-NAS
-SAN
 
-
-
-FC SAN
-IP SAN
-Koszt dodania nowego serwera
-wysoki (zakup dedykowanej pamięci masowej oraz kontrolera
-niski (podłączenie serwera do sieci IP),
-wysoki (zakup dedykowanej karty HBA)
-niski ( podłączenie serwera do sieci IP).
-Koszt infrastruktury
-brak dedykowanej infrastruktury ( każdy serwer podłączony bezpośrednio do pamięci masowej)
-niski (możliwość wykorzystania dostępnej infrastruktury IP)
-Wysoki ( budowa niezależnej infrastruktury FC, przełącznik FC, karty HBA)
-Niski (możliwość wykorzystania dostępnej infrastruktury IP plus dedykowany przełącznik iSCSI).
-Wymagane umiejętności
-znajomość urządzeń SCSI lub FC
-znajomość mechanizmów sieci IP
-znajomość mechanizmów sieci FC
-znajomość mechanizmów sieci IP
-Zdalne współdzielenie zasobów
-Brak
-IP – poprzez LAN, MAN, WAN
-kosztowne – z wykorzystaniem protokołów IFCP lub FCIP
-IP – poprzez LAN, MAN, WAN
-Niezawodność
-Niska
-Średnia
-Wysoka
-Wysoka
-Wydajność
-Wysoka
-Niska 
-Wysoka
-Średnia
-Skalowalność
-Niska
-Średnia
-Wysoka
-Wysoka
-
+| parametr | DAS | NAS | FC SAN | IP SAN |
+| --- | --- | ---| --- | --- | 
+| Koszt dodania nowego serwera | wysoki (zakup dedykowanej pamięci masowej oraz kontrolera | niski (podłączenie serwera do sieci IP) | wysoki (zakup dedykowanej karty HBA) | niski ( podłączenie serwera do sieci IP) |
+| Koszt infrastruktury | brak dedykowanej infrastruktury ( każdy serwer podłączony bezpośrednio do pamięci masowej) | niski (możliwość wykorzystania dostępnej infrastruktury IP) | Wysoki ( budowa niezależnej infrastruktury FC, przełącznik FC, karty HBA) | Niski (możliwość wykorzystania dostępnej infrastruktury IP plus dedykowany przełącznik iSCSI) |
+| Wymagane umiejętności | znajomość urządzeń SCSI lub FC | znajomość mechanizmów sieci IP | znajomość mechanizmów sieci FC |  znajomość mechanizmów sieci IP |
+| Zdalne współdzielenie zasobów | Brak | IP – poprzez LAN, MAN, WAN | kosztowne – z wykorzystaniem protokołów IFCP lub FCIP | IP – poprzez LAN, MAN, WAN |
+| Niezawodność | Niska | Średnia | Wysoka | Wysoka |
+| Wydajność | Wysoka | Niska | Wysoka | Średnia |
+| Skalowalność | Niska | Średnia | Wysoka | Wysoka |
 
 
 ## Podział sieci infrastruktury sieci storage area network na warstwy
